@@ -9,10 +9,9 @@ import { PostappComponent } from './postapp/postapp.component';
 
 const appRoutes:Routes=[
   {
-    path:"",component:AppComponent
+    path:"",component:PostappComponent
   }
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
