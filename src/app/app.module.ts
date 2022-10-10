@@ -12,7 +12,6 @@ const appRoutes:Routes=[
     path:"",component:PostappComponent
   }
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
