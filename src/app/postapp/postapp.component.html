@@ -6,22 +6,17 @@
             <table class="table">
                 <thead>
                   <tr>
-                    
+                    <th scope="col">ID</th>
                     <th scope="col">TITLE</th>
-                    <th scope="col">body</th>
-                   
+                    <th scope="col">BODY</th>
+                    
                     </tr>
                     </thead>
                 <tbody>
-                  <tr *ngFor="let i of tuduList">
+                  <tr *ngFor="let i of postData">
+                    <td>{{i.id}}</td>
                     <td>{{i.title}}</td>
                     <td>{{i.body}}</td>
-                    <td *ngIf="i.completed"><div class="alert alert-success" role="alert">
-                      Completed
-                    </div></td>
-                    <td *ngIf="! i.completed"><div class="alert alert-danger" role="alert">
-                      Not completed
-                    </div></td>
                    
                   </tr>
                   
